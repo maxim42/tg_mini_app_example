@@ -53,6 +53,59 @@
         <h1>Тестовое приложение</h1>
         <img src="{{ url_for('static', filename='bot.png') }}" alt="123">
         <p></p>
+
+        <h2>Device Storage</h2>
+        <div>
+            <label for="dsKey">Key:</label>
+            <input type="text" id="dsKey" placeholder="Enter key">
+        </div>
+        <div>
+            <label for="dsValue">Value:</label>
+            <input type="text" id="dsValue" placeholder="Enter value">
+        </div>
+        <button id="dsSetItem">Set Item</button>
+        <button id="dsGetItem">Get Item</button>
+        <button id="dsRemoveItem">Remove Item</button>
+        <button id="dsClearAll">Clear All Device Storage</button>
+        <p>Result: <span id="dsResult"></span></p>
+
+        <h2>Secure Storage</h2>
+        <div>
+            <label for="ssKey">Key:</label>
+            <input type="text" id="ssKey" placeholder="Enter key">
+        </div>
+        <div>
+            <label for="ssValue">Value (sensitive):</label>
+            <input type="password" id="ssValue" placeholder="Enter sensitive value">
+        </div>
+        <button id="ssSetItem">Set Secure Item</button>
+        <button id="ssGetItem">Get Secure Item</button>
+        <button id="ssRemoveItem">Remove Secure Item</button>
+        <button id="ssClearAll">Clear All Secure Storage</button>
+        <p>Result: <span id="ssResult"></span></p>
+        <p><em>Note: Retrieved secure values will be logged to the console, not displayed here.</em></p>
+
+        <h2>Fullscreen Mode</h2>
+        <button id="requestFullscreen">Request Fullscreen</button>
+        <button id="exitFullscreen">Exit Fullscreen</button>
+        <p>Fullscreen Status: <span id="fullscreenStatus">N/A</span></p>
+        <p>Safe Area Inset (Top): <span id="safeAreaTop">N/A</span>, (Bottom): <span id="safeAreaBottom">N/A</span></p>
+        <p>Content Safe Area Inset (Top): <span id="contentSafeAreaTop">N/A</span>, (Bottom): <span id="contentSafeAreaBottom">N/A</span></p>
+
+        <h2>Geolocation</h2>
+        <button id="requestLocation">Request Location</button>
+        <p>Location Status: <span id="locationStatus">N/A</span></p>
+        <p>Latitude: <span id="latitude">N/A</span></p>
+        <p>Longitude: <span id="longitude">N/A</span></p>
+        <p>Altitude: <span id="altitude">N/A</span></p>
+        <p>Accuracy (Horiz/Vert): <span id="accuracy">N/A</span></p>
+
+        <div id="themeInfo" style="padding-top: 20px;">
+            Current Color Scheme: <span id="colorSchemeDisplay">N/A</span><br>
+            Background Color: <span id="bgColorDisplay">N/A</span><br>
+            Text Color: <span id="textColorDisplay">N/A</span>
+        </div>
+
         <button class="btn">Кнопка</button>
     </div>
 

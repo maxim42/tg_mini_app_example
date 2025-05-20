@@ -1,0 +1,12 @@
+{
+  "name": "telegram-mini-app-bot-backend",
+  "version": "1.0.0",
+  "description": "Basic bot backend for Telegram Mini App demo",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.60.0" 
+  }
+}
