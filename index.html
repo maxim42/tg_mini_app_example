@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Mini App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Device Storage (Bot API 9.0+)</h2>
+    <div>
+        <label for="dsKey">Key:</label>
+        <input type="text" id="dsKey" placeholder="Enter key">
+    </div>
+    <div>
+        <label for="dsValue">Value:</label>
+        <input type="text" id="dsValue" placeholder="Enter value">
+    </div>
+    <button id="dsSave">Save to DeviceStorage</button>
+    <button id="dsLoad">Load from DeviceStorage</button>
+    <button id="dsRemove">Remove from DeviceStorage</button>
+    <button id="dsClearAll">Clear All DeviceStorage</button>
+    <div id="dsResult" class="result-area">DeviceStorage status will appear here.</div>
+
+    <hr>
+    <h2>Secure Storage (Bot API 9.0+)</h2>
+    <div>
+        <label for="ssKey">Key:</label>
+        <input type="text" id="ssKey" placeholder="Enter key">
+    </div>
+    <div>
+        <label for="ssValue">Value (sensitive):</label>
+        <input type="text" id="ssValue" placeholder="Enter sensitive value">
+    </div>
+    <button id="ssSave">Save to SecureStorage</button>
+    <button id="ssLoad">Load from SecureStorage</button>
+    <button id="ssRestore">Restore from SecureStorage</button>
+    <button id="ssRemove">Remove from SecureStorage</button>
+    <button id="ssClearAll">Clear All SecureStorage</button>
+    <div id="ssResult" class="result-area">SecureStorage status will appear here.</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
